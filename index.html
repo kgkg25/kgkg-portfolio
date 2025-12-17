@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">KG</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>I'm [Your Name]</h1>
+        <p>Frontend / Fullstack Developer crafting fast and modern web applications.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Briefly describe your experience, tech stack, and interests.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project Name 1</h3>
+          <p>Brief description of the project.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Name 2</h3>
+          <p>Brief description of the project.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer">@yourname</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
